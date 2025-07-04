@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals-soal.css" />
+    <link rel="stylesheet" href="soal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar-tryout">
+      <div class="navbar-container">
+        <div class="navbar-brand">Brainest Indonesia</div>
+        <div class="navbar-actions">
+          <button class="btn-akhiri">Akhiri Try Out</button>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Modal Start -->
+    <div class="modal-overlay" id="modalAkhiri">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Apakah Kamu Yakin?</h2>
+        <p>
+          Setelah mengakhiri Try Out, Kamu tidak dapat lagi mengerjakan soal
+          ini.
+        </p>
+        <div class="status">
+          <span><span class="dot blue"></span> Dijawab: 0</span>
+          <span><span class="dot yellow"></span> Ragu-ragu: 0</span>
+          <span><span class="dot gray"></span> Tidak Dijawab: 0</span>
+        </div>
+        <div class="modal-buttons">
+          <button class="btn-cancel" onclick="closeModal()">Batal</button>
+          <button class="btn-confirm" onclick="submitTryOut()">
+            Ya, Akhiri
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal End -->
+    <!-- Content Start -->
+    <div class="timer-container-mobile">
+      <div class="timer">03 : 06 : 56</div>
+    </div>
+    <div class="container">
+      <div class="question-box">
+        <h2 class="question-title">SOAL NO. 1</h2>
+        <p class="question-text">
+          Pendidikan kita saat ini setidaknya dihadapkan [...] tiga masalah
+          besar. (2) Masalah tersebut terkait dengan mutu, motivasi, dan
+          pemerataan pendidikan. (3) Secara umum, saat ini pendidikan kita lebih
+          menjalankan akumulasi pengetahuan yang bersifat [...], daripada
+          penguasaan keterampilan dan pembentukan kepribadian. (4) Pola motivasi
+          sebagian besar peserta didik lebih kepada penampilan daripada
+          pencapaian. (5) Bentuk motivasi ini lebih mengutamakan ijazah atau
+          gelar daripada [...] yang benar-benar dikuasai atau mampu dikerjakan.
+          (6) Pendidikan kita belum berhasil meningkatkan kualitas hasil belajar
+          sebagian besar peserta didik yang umumnya [...] sedang atau kurang.
+          (7) Pendidikan kita mungkin baru berhasil meningkatkan kemampuan
+          peserta didik yang merupakan bibit unggul.
+        </p>
+        <p class="question-text">
+          Judul yang paling tepat untuk melengkapi tulisan di atas adalah ....
+        </p>
+
+        <form class="options-form">
+          <label class="option">
+            <input type="radio" name="answer" />
+            <span>Keadaan Nyata Pendidikan Indonesia</span>
+          </label>
+          <label class="option selected">
+            <input type="radio" name="answer" checked />
+            <span>Keadaan Nyata Pendidikan Indonesia</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="answer" />
+            <span>Keadaan Nyata Pendidikan Indonesia</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="answer" />
+            <span>Keadaan Nyata Pendidikan Indonesia</span>
+          </label>
+          <label class="option">
+            <input type="radio" name="answer" />
+            <span>Keadaan Nyata Pendidikan Indonesia</span>
+          </label>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+          <span class="label-text">Ragu-ragu</span>
+        </form>
+      </div>
+
+      <div class="sidebar">
+        <div class="timer-container">
+          <div class="timer">03 : 06 : 56</div>
+        </div>
+        <div class="question-nav">
+          <div class="nav-item">1</div>
+          <div class="nav-item flagged">2</div>
+          <div class="nav-item answered">3</div>
+          <div class="nav-item not-answered">4</div>
+          <div class="nav-item">5</div>
+          <div class="nav-item">6</div>
+          <div class="nav-item">7</div>
+          <div class="nav-item">8</div>
+          <div class="nav-item">9</div>
+          <div class="nav-item">10</div>
+          <div class="nav-item">11</div>
+          <div class="nav-item">12</div>
+          <div class="nav-item">13</div>
+          <div class="nav-item">14</div>
+          <div class="nav-item">15</div>
+          <div class="nav-item">16</div>
+          <div class="nav-item">17</div>
+          <div class="nav-item">18</div>
+          <div class="nav-item">19</div>
+          <div class="nav-item">20</div>
+          <div class="nav-item">21</div>
+          <div class="nav-item">22</div>
+          <div class="nav-item">23</div>
+          <div class="nav-item">24</div>
+          <div class="nav-item">25</div>
+          <div class="nav-item">26</div>
+          <div class="nav-item">27</div>
+          <div class="nav-item">28</div>
+          <div class="nav-item">29</div>
+          <div class="nav-item">30</div>
+          <div class="nav-item">31</div>
+          <div class="nav-item">32</div>
+          <div class="nav-item">33</div>
+          <div class="nav-item">34</div>
+          <div class="nav-item">35</div>
+        </div>
+
+        <div class="legend">
+          <h4>Keterangan Warna</h4>
+          <div class="legend-sec">
+            <div class="legend-column">
+              <ul>
+                <li class="text-answered">
+                  <span class="color-box answered"></span> Dijawab
+                </li>
+                <li class="text-not-answered">
+                  <span class="color-box not-answered"></span> Belum Dijawab
+                </li>
+              </ul>
+              <ul>
+                <li class="text-flagged">
+                  <span class="color-box flagged"></span> Ragu-ragu
+                </li>
+                <li class="text-current">
+                  <span class="color-box current">
+                    <div class="inner-box"></div>
+                  </span>
+                  Posisi Saat Ini
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content End -->
+
+    <div class="buka-container">
+      <button class="buka" id="toggleButton">
+        <span id="buttonText">Buka</span>
+        <i class="fa-solid fa-angle-up" id="toggleIcon"></i>
+      </button>
+    </div>
+    <div class="content-mobile" id="toggleContent">
+      <div class="legend">
+        <h4>Keterangan Warna</h4>
+        <div class="legend-sec">
+          <div class="legend-column">
+            <ul>
+              <li class="text-answered">
+                <span class="color-box answered"></span> Dijawab
+              </li>
+              <li class="text-not-answered">
+                <span class="color-box not-answered"></span> Belum Dijawab
+              </li>
+            </ul>
+            <ul>
+              <li class="text-flagged">
+                <span class="color-box flagged"></span> Ragu-ragu
+              </li>
+              <li class="text-current">
+                <span class="color-box current">
+                  <div class="inner-box"></div>
+                </span>
+                Posisi Saat Ini
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="question-nav">
+        <div class="nav-item">1</div>
+        <div class="nav-item flagged">2</div>
+        <div class="nav-item answered">3</div>
+        <div class="nav-item not-answered">4</div>
+        <div class="nav-item">5</div>
+        <div class="nav-item">6</div>
+        <div class="nav-item">7</div>
+        <div class="nav-item">8</div>
+        <div class="nav-item">9</div>
+        <div class="nav-item">10</div>
+        <div class="nav-item">11</div>
+        <div class="nav-item">12</div>
+        <div class="nav-item">13</div>
+        <div class="nav-item">14</div>
+        <div class="nav-item">15</div>
+        <div class="nav-item">16</div>
+        <div class="nav-item">17</div>
+        <div class="nav-item">18</div>
+        <div class="nav-item">19</div>
+        <div class="nav-item">20</div>
+        <div class="nav-item">21</div>
+        <div class="nav-item">22</div>
+        <div class="nav-item">23</div>
+        <div class="nav-item">24</div>
+        <div class="nav-item">25</div>
+        <div class="nav-item">26</div>
+        <div class="nav-item">27</div>
+        <div class="nav-item">28</div>
+        <div class="nav-item">29</div>
+        <div class="nav-item">30</div>
+        <div class="nav-item">31</div>
+        <div class="nav-item">32</div>
+        <div class="nav-item">33</div>
+        <div class="nav-item">34</div>
+        <div class="nav-item">35</div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer class="footer-tryout">
+      <div class="footer-container">
+        <!-- Tombol Sebelumnya -->
+        <button class="btn-sebelumnya">
+          <span class="icon-circle"
+            ><i class="fa-solid fa-arrow-left"></i
+          ></span>
+          <span class="title-footer">Sebelumnya</span>
+        </button>
+
+        <!-- Progress Indicator -->
+        <div class="progress-indicator">
+          <div class="progress-box">
+            <span>1 / 35</span>
+          </div>
+        </div>
+
+        <!-- Tombol Selanjutnya -->
+        <button class="btn-selanjutnya">
+          <span class="title-footer">Selanjutnya</span>
+          <span class="icon-circle"
+            ><i class="fa-solid fa-arrow-right"></i
+          ></span>
+        </button>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script>
+      const toggleButton = document.getElementById("toggleButton");
+      const toggleContent = document.getElementById("toggleContent");
+      const toggleIcon = document.getElementById("toggleIcon");
+      const buttonText = document.getElementById("buttonText");
+      const bukaContainer = document.querySelector(".buka-container");
+
+      toggleButton.addEventListener("click", () => {
+        toggleContent.classList.toggle("show");
+        toggleIcon.classList.toggle("rotate");
+
+        if (toggleContent.classList.contains("show")) {
+          buttonText.innerText = "Tutup";
+
+          const contentHeight = toggleContent.offsetHeight;
+          bukaContainer.classList.add("fixed");
+          bukaContainer.style.bottom = `${contentHeight + 50}px`;
+        } else {
+          buttonText.innerText = "Buka";
+          bukaContainer.classList.remove("fixed");
+          bukaContainer.style.bottom = `60px`;
+        }
+      });
+    </script>
+    <script>
+      // Tampilkan modal
+      document
+        .querySelector(".btn-akhiri")
+        .addEventListener("click", function () {
+          document.getElementById("modalAkhiri").style.display = "flex";
+        });
+
+      // Tutup modal
+      function closeModal() {
+        document.getElementById("modalAkhiri").style.display = "none";
+      }
+
+      // Aksi ketika dikonfirmasi
+      function submitTryOut() {
+        alert("Try Out Berakhir!");
+        closeModal();
+      }
+    </script>
+  </body>
+</html>
